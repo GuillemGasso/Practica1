@@ -1,33 +1,34 @@
-#ifndef __Point2d_H__
-#define __Point2d_H__
+#ifndef __PointTemplate_H__
+#define __PointTemplate_H__
 #include "Swap.h"
 #include <iostream>
 #include <math.h>
 
-class Point2d
+template <class TYPE>
+class PointT
 {
 public:
 
-	float x, y;
+	TYPE x, y;
 
 
-	Point2d& Point2d::operator+ (const Point2d &p) const
+	PointT& PointT::operator+ (const PointT &p) const
 	{
-		Point2d tmp;
+		PointT tmp;
 		tmp.x = x + p.x;
 		tmp.y = y + p.y;
 		return(tmp);
 	}
 
-	Point2d& Point2d::operator- (const Point2d &p2) const
+	PointT& PointT::operator- (const PointT &p2) const
 	{
-		Point2d tmp;
+		PointT tmp;
 		tmp.x = x - p2.x;
 		tmp.y = y - p2.y;
 		return(tmp);
 	}
 
-	const Point2d& Point2d::operator+= (const Point2d &p3)
+	const PointT& PointT::operator+= (const PointT &p3)
 	{
 		x += p3.x;
 		y += p3.y;
@@ -35,7 +36,7 @@ public:
 		return *this;
 	}
 
-	const Point2d& Point2d::operator-=(const Point2d &p4)
+	const PointT& PointT::operator-=(const PointT &p4)
 	{
 		x -= p4.x;
 		y -= p4.y;
@@ -43,12 +44,12 @@ public:
 		return(*this);
 	}
 
-	bool Point2d::operator==(const Point2d &p5) const
+	bool PointT::operator==(const PointT &p5) const
 	{
 		return (x == p5.x && y == p5.y);
 	}
 
-	bool Point2d::operator!=(const Point2d &p6) const
+	bool PointT::operator!=(const PointT &p6) const
 	{
 		return (x != p6.x || y != p6.y);
 	}
@@ -63,7 +64,7 @@ public:
 		x = y = 0.0f;
 	}
 
-	float DistanceTo(const Point2d &p7)
+	TYPE DistanceTo(const PointT &p7)
 	{
 		return sqrt(pow(p7.x - x, 2) + pow(p7.y - y, 2));
 	}
@@ -73,4 +74,4 @@ public:
 
 
 
-#endif //__Point2d_h__
+#endif //__PointTemplate_h__

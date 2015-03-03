@@ -125,7 +125,7 @@ namespace UnitTest2
 
 					capacity = s17.Capacity();
 
-					Assert::IsTrue(capacity = 5);
+					Assert::IsTrue(capacity == 5);
 				}
 
 				TEST_METHOD(Capacity)
@@ -135,7 +135,7 @@ namespace UnitTest2
 
 					capacity = s18.Capacity();
 
-					Assert::IsTrue(capacity = 5);
+					Assert::IsTrue(capacity == 5);
 				}
 
 				TEST_METHOD(GetString)

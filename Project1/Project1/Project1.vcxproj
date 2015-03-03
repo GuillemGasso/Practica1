@@ -65,7 +65,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Point2d.h" />
+    <ClInclude Include="PointTemplate.h" />
     <ClInclude Include="String.h" />
+    <ClInclude Include="Swap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

@@ -1,5 +1,5 @@
-#ifndef __Cadena_H__
-#define __Cadena_H__
+#ifndef __String_H__
+#define __String_H__
 
 #include <iostream>
 #include <wtypes.h>
