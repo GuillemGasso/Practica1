@@ -1,0 +1,18 @@
+
+CodeStyle -> Guillem Gassó
+
+Filenames:
+- PascalCase
+- Ex: Project.h
+
+Variables:
+- camelCase
+- Ex: stringSize;
+
+Class Names:
+- PascalCase
+- Ex: Point2d
+
+Method Names:
+- PascalCase
+- Ex: IsZero
